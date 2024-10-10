@@ -8,4 +8,6 @@ router.post('/', ticketController.createTicket);
 router.put('/:id', ticketController.updateTicket);
 router.delete('/:id', ticketController.deleteTicket);
 
+router.get('/attachments/:filename', ticketController.getAttachment);
+
 module.exports = router;
